@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 17px;
+    background: white;
+    font-family: sans-serif;
+    color: #1616169a;
+}
+
+/* nav */
+.nav_desktop{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    background: transparent;
+    transition: background-image .1s ease, box-shadow .1s ease;
+}
+.nav_desktop.active{
+    background: white;
+    box-shadow: 2px 4px 15px rgba(0 0 0 0.5);
+    z-index: 999;
+    transition: background-image .1s ease, box-shadow .1s ease;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav_desktop ul{
+    display: flex;
+}
+
+.nav_desktop ul li{
+    margin: 0 1.5rem;
+    list-style-type: none;
+}
+
+ul li a:hover{
+    color: #161616;
+    border-bottom: 2px solid red;
+}
+
+.actived{
+    font-weight: 600;
+}
+
+.links{
+    display: flex;
+}
+
+.links i{ 
+    margin: 0 0.8rem;
+    cursor: pointer;
+}
+
+.links i:hover{
+    color: #000000;
+}
+
+/* hero */
+.hero{
+    background: #c39696;
+    height: 35.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.882), rgba(255, 255, 255, 0.808)), url(/assets/Img/heroimg.jpg);
+    object-fit: cover;
+    background-size: cover;
+    padding-top: -800px;
+}
+
+.intro{
+    text-align: center;
+}
+
+.intro h4{
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.intro h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.intro2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    padding: 0 17%;
+}
+.intro2 .box{
+    width: 100%;
+    padding: 0.2rem;
+    margin-bottom: -23.8rem;    
+    object-fit: cover;
+    background-size: cover;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.box1{
+    align-content: center;
+    overflow: hidden;
+    .topline{
+        display: block;
+        position: relative;
+        font-size: 1.5rem;
+        color: black;
+        padding-left: 0.5rem;
+    }
+    h3{
+        display: block;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        color: black;
+        font-weight: 600;
+    }
+    .multitext{
+        color: indianred;
+        text-transform: capitalize;
+    }
+    p{
+        display: block;
+        padding-left: 0.5rem;
+        line-height: 1.3;
+        font-size: 0.98rem;
+    }
+    
+}
+
+
+.box img{
+    width: 100%;
+    height: 25rem;
+    object-fit: contain;
+    border-radius: 24px;
+    /* opacity: 0.5; */
+}
+
+
+/*  */
+.flash_sales{
+    display: grid;
+    place-items: center;
+
+    h1{
+        padding-top: 20%;
+    }
+}
+
+.flash_sales .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+
+.flash_sales .container .box{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+}
+
+.flash_sales .container .box img{
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 24px;
+    cursor: zoom-in;
+}
+
+.flash_sales .container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.flash_sales .box h2{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+/* .prices{
+    display: flex;
+} */
+
+.prices p{
+    margin: 0 5px;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.oldprice{
+    /* color: gold; */
+    text-decoration: 2px solid indianred line-through;
+}
+
+.newprice{
+    color: #4caf50;
+}
+
+/* .flash_sales .box p{
+    color: green;
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+} */
+
+.flash_sales .btn{
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flash_sales .btn:hover{
+    background-color: #f7f7f7;
+}
+
+/*  */
+.hoddies-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+.hoddies-grid .box{
+    background-color: white
+}
+.hoddies-grid .box img{
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 24px;
+    cursor: zoom-in;
+}
+.hoddies-grid .box img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.hoddies-grid .box h2{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+.hoddies-grid .box p{
+    color: green
+}
+
